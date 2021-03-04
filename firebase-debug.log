@@ -1,0 +1,118 @@
+[debug] [2021-03-04T11:39:43.154Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T11:39:43.155Z] Command:       /usr/local/bin/firebase /Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-03-04T11:39:43.155Z] CLI Version:   7.15.1
+[debug] [2021-03-04T11:39:43.156Z] Platform:      darwin
+[debug] [2021-03-04T11:39:43.156Z] Node Version:  v12.13.1
+[debug] [2021-03-04T11:39:43.157Z] Time:          Thu Mar 04 2021 19:39:43 GMT+0800 (Hong Kong Standard Time)
+[debug] [2021-03-04T11:39:43.157Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T11:39:43.157Z] 
+[debug] [2021-03-04T11:39:43.165Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-04T11:39:43.166Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ifantrumpet
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using card-web2.
+[debug] [2021-03-04T11:40:45.531Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-04T11:40:45.531Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-04T11:40:45.734Z] <<< HTTP RESPONSE 400
+[debug] [2021-03-04T11:40:45.736Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/card-web2  
+ 
+[debug] [2021-03-04T11:40:46.308Z] <<< HTTP RESPONSE 401
+[debug] [2021-03-04T11:40:46.309Z] <<< HTTP RESPONSE BODY
+[debug] [2021-03-04T11:40:46.310Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-03-04T11:40:46.593Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to get Firebase project card-web2. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-03-04T11:45:55.466Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T11:45:55.467Z] Command:       /usr/local/bin/firebase /Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-03-04T11:45:55.468Z] CLI Version:   7.15.1
+[debug] [2021-03-04T11:45:55.468Z] Platform:      darwin
+[debug] [2021-03-04T11:45:55.468Z] Node Version:  v12.13.1
+[debug] [2021-03-04T11:45:55.469Z] Time:          Thu Mar 04 2021 19:45:55 GMT+0800 (Hong Kong Standard Time)
+[debug] [2021-03-04T11:45:55.469Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T11:45:55.469Z] 
+[debug] [2021-03-04T11:45:55.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-04T11:45:55.477Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ifantrumpet
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using card-web2.
+[debug] [2021-03-04T11:46:06.294Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-04T11:46:06.294Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-04T11:46:06.518Z] <<< HTTP RESPONSE 400
+[debug] [2021-03-04T11:46:06.519Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/card-web2  
+ 
+[debug] [2021-03-04T11:46:06.807Z] <<< HTTP RESPONSE 401
+[debug] [2021-03-04T11:46:06.807Z] <<< HTTP RESPONSE BODY
+[debug] [2021-03-04T11:46:06.808Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-03-04T11:46:07.003Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (/Users/ifantrumpet/.cache/firebase/tools/lib/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to get Firebase project card-web2. Please make sure the project exists and your account has permission to access it.

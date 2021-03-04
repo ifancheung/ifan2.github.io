@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Ifan's Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Ifan's<br>Web</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="https://ifanc.ardyslexiatoy.com/ChristmasCard/MerryChristmas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" >Christamas Card</a> 
+    
+    <a href="https://ifanc.ardyslexiatoy.com/tools/sendemail/webform.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Send Email</a> 
+
+    <a href="https://ifanc.ardyslexiatoy.com/games/Simon/simon.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Simon® Game</a> 
+
+    <a href="https://ifanc.ardyslexiatoy.com/games/TowerBlock/TowerBlock.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tower Block Game</a> 
+
+    <a href="https://ifanc.ardyslexiatoy.com/games/TicTacToe/TicTacToe.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tic Tac Toe Game</a> 
+    
+    <a href="https://ifanc.ardyslexiatoy.com/zblogphp-master" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Blog (Beta)</a> 
+
+    <a href="https://ifanc.ardyslexiatoy.com/tools/ContactForm/webform.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Ifan's Web</span>
+</header>
+
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
